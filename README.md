@@ -4,55 +4,54 @@ Reasons of recheck:-
 
 2. there will be problem in req body structure. Firstly, I send data from postman in below format:
 
-{
-"userData":{
-{
-"userId": "number",
-"username": "string",
-"password": "string",
-"fullName": {
-"firstName": "string",
-"lastName": "string"
-},
-"age": "number",
-"email": "string",
-"isActive": "boolean",
-"hobbies": [
-"string",
-"string"
-],
-"address": {
-"street": "string",
-"city": "string",
-"country": "string"
-}
-}
-}
-}
+   {
+   "userData":
+   {
+   "userId": "number",
+   "username": "string",
+   "password": "string",
+   "fullName": {
+   "firstName": "string",
+   "lastName": "string"
+   },
+   "age": "number",
+   "email": "string",
+   "isActive": "boolean",
+   "hobbies": [
+   "string",
+   "string"
+   ],
+   "address": {
+   "street": "string",
+   "city": "string",
+   "country": "string"
+   }
+   }
+   }
 
-But I saw in your requirement document that req body structure must be :
+But I saw in your requirement document that req body structure must be like below :
 
-{
-"userId": "number",
-"username": "string",
-"password": "string",
-"fullName": {
-"firstName": "string",
-"lastName": "string"
-},
-"age": "number",
-"email": "string",
-"isActive": "boolean",
-"hobbies": [
-"string",
-"string"
-],
-"address": {
-"street": "string",
-"city": "string",
-"country": "string"
-}
-}
+    {
+        "userId": "number",
+        "username": "string",
+        "password": "string",
+        "fullName": {
+            "firstName": "string",
+            "lastName": "string"
+        },
+        "age": "number",
+        "email": "string",
+        "isActive": "boolean",
+        "hobbies": [
+            "string",
+            "string"
+        ],
+        "address": {
+            "street": "string",
+            "city": "string",
+            "country": "string"
+        }
+    }
 
 So , I design my application to receive data from postman without "userData" . Format is shown in photos.
 
