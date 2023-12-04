@@ -1,33 +1,32 @@
 Reasons of recheck:-
 
-1. Here I give some photo that shows my code working properly(from my point of view).
+1.  Here I give some photo that shows my code working properly(from my point of view).
 
-2. there will be problem in req body structure. Firstly, I send data from postman in below format:
+2.  there will be problem in req body structure. Firstly, I send data from postman in below format:
 
-   {
-   "userData":
-   {
-   "userId": "number",
-   "username": "string",
-   "password": "string",
-   "fullName": {
-   "firstName": "string",
-   "lastName": "string"
-   },
-   "age": "number",
-   "email": "string",
-   "isActive": "boolean",
-   "hobbies": [
-   "string",
-   "string"
-   ],
-   "address": {
-   "street": "string",
-   "city": "string",
-   "country": "string"
-   }
-   }
-   }
+        {
+            "userData":{
+                "userId": "number",
+                "username": "string",
+                "password": "string",
+                "fullName": {
+                    "firstName": "string",
+                    "lastName": "string"
+                },
+                "age": "number",
+                "email": "string",
+                "isActive": "boolean",
+                "hobbies": [
+                    "string",
+                    "string"
+                ],
+                "address": {
+                    "street": "string",
+                    "city": "string",
+                    "country": "string"
+                }
+            }
+        }
 
 But I saw in your requirement document that req body structure must be like below :
 
